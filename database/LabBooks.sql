@@ -126,6 +126,13 @@ CREATE TABLE `Image` (
   `description` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumpning av Data i tabell `Image`
+--
+
+INSERT INTO `Image` (`imageID`, `fileName`, `title`, `description`) VALUES
+(1, 'Sk.png', '', '');
+
 -- --------------------------------------------------------
 
 --
