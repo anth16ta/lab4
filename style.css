@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+a{
+    color: #67452b;
+}
+a:hover{
+    color: #8c6d5d;
+}
+
+/*  HEADER  */
+header{
+    position: relative;
+}
+#headerimgbox{
+    display: block;
+    max-height: 450px;
+    overflow: hidden;
+}
+header img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    display: block;
+}
+h1{    
+    font-size: 120px;
+    line-height: 120px;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    width: 100%;
+    font-family: 'Special Elite';
+}
+/*  Main menu  */
+nav{
+    position: absolute;
+    bottom: 15px;
+    background: #fff;
+    width: 100%;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    line-height: 15px;
+    font-family: 'Special Elite';
+}
+nav ul li a:hover, nav .active{
+    color: #67452b;
+    text-decoration: underline;
+}
+
+/*  MAIN  */
+main{
+    min-height: calc(100vh - 660px);
+    max-width: 750px;
+    margin: auto;
+    padding: 60px;
+    line-height: 20px;
+}
+h2{
+    font-family: 'Special Elite';
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+}
+main p{
+    margin-bottom: 20px;
+}
+
+/*  Table  */
+table{
+    margin-top: 60px;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr {
+    border-bottom: 1px solid #c7ab9c;
+}
+tr:first-child{
+    border-bottom: 2px solid #8c6d5d;
+}
+tr:last-child{
+    border: none;
+}
+table .button{
+    float: right;
+    margin: 10px 0;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+th{
+    text-align: left;
+    padding: 0 10px;
+}
+th:first-child, th:nth-child(2){
+    width: 35%;
+}
+th:nth-child(3){
+    width: 12%;
+}
+td{
+    padding: 10px;
+}
+table p{
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+td p+p{
+    font-size: 12px;
+    color: #8c6d5d;
+    font-style: italic;
+    margin: 0;
+}
+td p+p+p{
+    font-style: normal;
+}
+
+
+/*  Form  */
+form{
+    text-align: center;
+}
+form input, textarea{
+    padding: 10px;
+    border: solid 1px #8c6d5d;
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+}
+form input[type="submit"], button{
+    background: #8c6d5d;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+button.disabled{
+    background: #c7ab9c;
+    cursor: default;
+}
+#searchform input[type="submit"]{
+    float: right;
+    margin: 0;
+}
+#searchform input[type="text"]{
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 0 0;
+    width: calc(50% - 10px);
+}
+#searchform div{
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+#contactform{
+    width: 400px;
+    margin: 0 auto;
+}
+#contactform input, #contactform textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+#contactform textarea{
+    height: 100px;
+}
+#contactform input[type="submit"]{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+fieldset{
+    border: 2px solid #c7ab9c;
+}
+fieldset legend{
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 20px;
+    color: #8c6d5d;
+}
+#imgUpload label, #imgUpload input{
+    display: block;
+}
+#imgUpload > label[for="img"], #imgUpload input[type="file"]{
+    display: inline-block;
+}
+#imgUpload input[type="file"]{
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#imgUpload{
+    width: 40%;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}
+#imgUpload input, #imgUpload textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+#imgUpload input[type="file"]{
+    border: none;
+}
+#imgUpload input[type="submit"]{
+    width: 100px;
+    margin: 5px auto;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+/* about us */
+#aboutmain img{
+    width: 400px;
+    margin: 0 0 20px 20px;
+    float: right;
+}
+
+/* Gallery */
+#gallery{
+    text-align: center;
+    margin: -10px;
+}
+#gallery a{
+    display: inline-block;
+    margin: 10px;
+}
+#gallery img{
+    display: block;
+    height: 120px;
+    max-width: 750px;
+}
+#galleryimage h2{
+    display: inline-block;
+}
+#galleryimage p{
+    margin: 0;
+}
+#galleryimage #imgBox{
+    display: inline-block;
+}
+#imgContainer{
+    position: relative;
+    text-align: center;
+}
+#imgBox{
+    
+}
+#imgBox img{
+    display: inline-block;
+    max-width: 100%;
+}
+#imgBox figcaption{
+    padding: 5px;
+    text-align: left;
+}
+#imgBox h4{
+    text-decoration: underline;
+}
+#back{
+    float: right;
+}
+
+/* Admin */
+#admin fieldset p{
+    text-align: center;
+    color: #67452b;
+}
+
+
+/*  FOOTER  */
+footer{
+    text-align: center;
+    padding: 30px;
+    border-top: solid 15px #8c6d5d;
+    color: #67452b;
+    font-size: 15px;
+    line-height: 15px;
+}
